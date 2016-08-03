@@ -1,0 +1,13 @@
+[Unit]
+Description=Apply ssh authorized_keys from ENV
+DefaultDependencies=no
+Conflicts=shutdown.target
+
+[Service]
+Type=oneshot
+EnvironmentFile=/etc/sysconfig/set_ssh_auth
+RemainAfterExit=yes
+ExecStart=/usr/bin/set_ssh_auth
+
+[Install]
+WantedBy=basic.target
