@@ -1,4 +1,10 @@
 
+This container config is based on Ricardo help:
+http://developers.redhat.com/blog/2014/05/05/running-systemd-within-docker-container/
+Ricardo Martinelli Oliveira
+ricardo.martinelli.oliveira@gmail.com
+
+
 Running ssh container
 ---------------------
 
